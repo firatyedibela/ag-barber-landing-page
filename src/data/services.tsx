@@ -1,8 +1,4 @@
-type Service = {
-  icon: string;
-  title: string;
-  description: string;
-};
+import type { Service } from '../types';
 
 export const services: Service[] = [
   {
