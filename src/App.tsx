@@ -11,7 +11,7 @@ function App() {
         <Hero />
       </div>
       <main className="font-body">
-        <section className="services min-h-[100vh] px-[25px] py-28">
+        <section className="services min-h-[100vh] px-[25px] py-16 lg:py-28">
           <div className="services-wrap max-w-[1160px] m-auto border border-white h-full flex flex-col items-center gap-12">
             <div className="services-header flex flex-col gap-1">
               <h2 className="text-[16px] lg:text-[20px] tracking-[2px] font-bold text-golden font-body text-center">
