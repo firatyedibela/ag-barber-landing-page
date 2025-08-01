@@ -21,3 +21,8 @@
   font-weight: bold;
   font-style: normal;
 }
+
+.hero {
+  background-image: url('./assets/barbershop-bg.jpg');
+  background-size: cover;
+}
