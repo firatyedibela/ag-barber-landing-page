@@ -12,3 +12,13 @@ export type Service = {
   title: string;
   description: string;
 };
+
+export type Review = {
+  id: number;
+  avatar: string;
+  owner: string;
+  stars: 1 | 2 | 3 | 4 | 5;
+  timeAgo: string;
+  review: string;
+  href: string;
+};
