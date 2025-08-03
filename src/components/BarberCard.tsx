@@ -1,5 +1,6 @@
 import instagramIcon from '../assets/instagram-icon.svg';
 import phoneIcon from '../assets/phone-icon.svg';
+import whatsappIcon from '../assets/whatsapp-icon.svg';
 
 type BarberCardProps = {
   avatar: string;
@@ -19,41 +20,40 @@ export const BarberCard = ({
   phone,
 }: BarberCardProps) => {
   return (
-    <div className="max-w-[420px]">
-      <div className="h-[260px] bg-[#3C3A3A]/60 shadow-sm flex justify-center items-center rounded-t-[40px]">
-        <img
-          className="w-[180px] h-[180px] rounded-full bg-gray-500 "
-          src={avatar}
-          alt="avatar image"
-        />
-      </div>
-      <div className="flex flex-col gap-3 items-center px-8 py-5 bg-[#D9D9D9] shadow-lg rounded-b-[15px]">
-        <div className="flex flex-col items-center">
-          <h3 className="text-[22px] font-semibold">{name}</h3>
-          <span className="text-[18px] font-medium text-black/60">{title}</span>
+    <div className="w-[325px] min-h-[390px] relative mt-24 bg-[#181817] rounded-[20px] shadow-[4px_4px_10px_0_#323232]">
+      <img
+        src={avatar}
+        className="img bg-white rounded-20 w-[190px] h-[190px] object-cover object-top rounded-[20px] absolute -top-1/4 left-1/2 -translate-x-1/2 shadow-[0px_4px_10px_0_#7C7C7C]"
+      ></img>
+      <div className="flex flex-col justify-between px-4 absolute w-full bottom-6 top-30 text-white/85 text-center">
+        <div className="">
+          <div className="">
+            <h3 className="uppercase font-bold text-[22px] tracking-[1px]">
+              {name}
+            </h3>
+            <span className="text-white/30">{title}</span>
+            <div className="h-[1px] w-[250px] bg-white/15 m-auto my-2"></div>
+          </div>
+          <div className="">
+            <p>{introduction}</p>
+          </div>
         </div>
-        <div className="h-[1px] w-full max-w-[350px] bg-black"></div>
-        <p className="text-[16px] font-medium leading-[140%] text-black/100 text-center">
-          {introduction}
-        </p>
-        <div className="h-[1px] w-full max-w-[350px] bg-black"></div>
-        <div className="flex flex-col gap-3">
-          <div className="flex gap-4 items-center">
-            <img
-              className="w-[35px] h-[35px]"
-              src={instagramIcon}
-              alt="instagram icon"
-            />
-            <span>@{instagram}</span>
-          </div>
-          <div className="flex gap-4 items-center">
-            <img
-              className="w-[35px] h-[35px]"
-              src={phoneIcon}
-              alt="phone icon"
-            />
-            <span>+90 {phone}</span>
-          </div>
+        <div className="flex justify-center gap-6">
+          <img
+            className="w-7 h-7 rounded-md"
+            src={instagramIcon}
+            alt="instagram icon"
+          />
+          <img
+            className="w-7 h-7 rounded-md"
+            src={whatsappIcon}
+            alt="whatsapp icon"
+          />
+          <img
+            className="w-7 h-7 rounded-md"
+            src={phoneIcon}
+            alt="phone icon"
+          />
         </div>
       </div>
     </div>
