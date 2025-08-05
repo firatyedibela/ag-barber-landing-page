@@ -7,6 +7,10 @@
   --font-body: 'Montserrat';
 }
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/Montserrat-VariableFont_wght.ttf')
@@ -37,4 +41,30 @@
     grid-column: span 2;
     margin: auto;
   }
+}
+
+.reviews-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(0, 0, 0);
+  background-color: rgba(154, 154, 154, 0.749);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 250ms;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(253, 253, 253, 0.891);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem; /* arrow size */
 }
