@@ -9,18 +9,18 @@ export const ReviewCard = (props: Review) => {
     <a
       href={href}
       target="_blank"
-      className="mt-3 ml-3 block flex flex-col gap-3 p-4 max-w-[300px] shadow-[0_0_5px_1px_#D1D5DB] rounded-lg hover:scale-102 transition duration-150"
+      className="w-[300px] h-[200px] m-auto block flex flex-col gap-3 p-4 shadow-[0_0_5px_1px_#D1D5DB] rounded-lg hover:scale-102 transition duration-150"
     >
       <div className="flex justify-between">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-start">
           <img
             src={avatar}
             alt="profile image of review owner"
-            className="w-14 h-14"
+            className="w-13 h-13"
           />
           <div>
-            <h4 className="text-[17px] font-semibold">{owner}</h4>
-            <span className="text-black/80 text-[15px]">{timeAgo}</span>
+            <h4 className="text-[15px] font-semibold max-w-[150px]">{owner}</h4>
+            <span className="text-black/80 text-[14px]">{timeAgo}</span>
           </div>
         </div>
         <img className="w-8 h-8" src={googleIcon} alt="google icon" />
