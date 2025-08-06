@@ -75,7 +75,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="location-map py-24 bg-[#1a1a1a]">
+        <section className="location-map py-18 bg-[#1a1a1a]">
           <div className="location-wrap max-w-[1160px] m-auto flex flex-col items-center gap-10">
             <div className="location-header">
               <h2 className="text-[42px] lg:text-[72px] font-semibold tracking-[4px] text-center text-white">
