@@ -6,17 +6,17 @@ type LightboxProps = {
 };
 
 export const Lightbox = ({ image, onClose }: LightboxProps) => {
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     onClose();
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      onClose();
+    };
 
-  //   window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div
