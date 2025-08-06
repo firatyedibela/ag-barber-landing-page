@@ -3,7 +3,7 @@ import type { Review } from '../types';
 export const reviews: Review[] = [
   {
     id: 1,
-    avatar: '',
+    avatar: '../src/assets/review-avatars/metehan-ar.png',
     owner: 'Metehan Ar',
     stars: 5,
     timeAgo: 'bir ay önce',
@@ -13,7 +13,7 @@ export const reviews: Review[] = [
   },
   {
     id: 2,
-    avatar: '../assets/review-avatars/ali-can.png',
+    avatar: '../src/assets/review-avatars/ahmet-berkay-yevimli.png',
     owner: 'Ahmet Berkay Yevimli',
     stars: 5,
     timeAgo: '3 yıl önce',
@@ -22,7 +22,7 @@ export const reviews: Review[] = [
   },
   {
     id: 3,
-    avatar: '../assets/review-avatars/ali-can.png',
+    avatar: '../src/assets/review-avatars/ali-can.png',
     owner: 'Ali Can',
     stars: 5,
     timeAgo: '3 yıl önce',
@@ -31,7 +31,7 @@ export const reviews: Review[] = [
   },
   {
     id: 4,
-    avatar: '../assets/review-avatars/emre-kumsal.png',
+    avatar: '../src/assets/review-avatars/emre-kumsal.png',
     owner: 'Emre Kumsal',
     stars: 5,
     timeAgo: '2 yıl önce',
@@ -40,7 +40,7 @@ export const reviews: Review[] = [
   },
   {
     id: 5,
-    avatar: '../assets/review-avatars/yunus-emre-hıdır.png',
+    avatar: '../src/assets/review-avatars/yunus-emre-hıdır.png',
     owner: 'Yunus Emre Hıdır',
     stars: 5,
     timeAgo: 'bir yıl önce',
