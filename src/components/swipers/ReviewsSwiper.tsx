@@ -7,24 +7,19 @@ import { ReviewCard } from '../ReviewCard';
 export const ReviewsSwiper = () => {
   return (
     <Swiper
+      className="reviews-swiper"
       modules={[Autoplay]}
       autoplay={{
         delay: 0,
       }}
-      speed={5000}
+      speed={4500}
+      spaceBetween={16}
       loop
-      slidesPerView={1}
-      breakpoints={{
-        620: {
-          slidesPerView: 2,
-        },
-        965: {
-          slidesPerView: 3,
-        },
-      }}
+      slidesPerView="auto"
+      freeMode
     >
       {reviews.map((review) => (
-        <SwiperSlide className="py-4" key={review.id}>
+        <SwiperSlide className="py-4 max-w-[320px]" key={review.id}>
           <ReviewCard {...review} />
         </SwiperSlide>
       ))}
