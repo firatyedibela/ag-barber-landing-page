@@ -5,7 +5,8 @@ import { BarberCard } from './components/BarberCard';
 import { services } from './data/services';
 import { barbers } from './data/barbers';
 import scissorsIcon from './assets/scissors-icon.svg';
-import { Gallery } from './components/Gallery';
+import { Gallery } from './components/swipers/Gallery';
+import { ReviewsSwiper } from './components/swipers/ReviewsSwiper';
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
         <Hero />
       </div>
       <main className="font-body">
-        <section className="services min-h-[100vh] px-[25px] py-24 lg:py-28">
+        <section className="services min-h-[100vh] px-[25px] py-24">
           <div className="services-wrap max-w-[1160px] m-auto h-full flex flex-col items-center gap-12">
             <div className="services-header flex flex-col gap-1">
-              <h2 className="text-[16px] lg:text-[20px] tracking-[2px] font-bold text-golden font-body text-center">
+              <h2 className="text-[16px] lg:text-[28px] tracking-[2px] lg:tracking-[4px] font-bold text-golden font-body text-center">
                 HİZMETLERİMİZ
               </h2>
               <p className="lg:w-[960px] text-[28px] lg:text-[32px] text-center font-semibold opacity-90">
@@ -51,6 +52,26 @@ function App() {
               {barbers.map((barber) => (
                 <BarberCard key={barber.name} {...barber} />
               ))}
+            </div>
+          </div>
+        </section>
+        <section className="gallery min-h-[100vh] py-24 ">
+          <div className="gallery-wrap m-auto">
+            <div className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-16">
+              <h2 className="text-[24px] lg:text-[64px] font-semibold">
+                Salonumuzdan Görseller
+              </h2>
+              <p className="text-[17px] lg:text-[24px]">
+                Klimalı salonumuzda serin bir ortamda hizmet alırken, çay ve
+                kahve ikramlarımızla keyfinize keyif katıyoruz.
+              </p>
+              <div className="w-[250px] md:w-[450px] lg:w-[800px] h-[1px] mt-2 bg-black opacity-[0.15] self-center"></div>
+            </div>
+            <div className="image-gallery-wrap mb-6 max-w-[1440px] m-auto md:px-4">
+              <Gallery />
+            </div>
+            <div className="reviews-wrap max-w-[1160px] xl:max-w-[1280px] md:px-8 m-auto">
+              <ReviewsSwiper />
             </div>
           </div>
         </section>
