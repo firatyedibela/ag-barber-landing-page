@@ -74,3 +74,41 @@
     pointer-events: none;
   }
 }
+
+.appointment-button:hover > span {
+  color: black;
+  transition: all;
+  transition-duration: 600ms;
+}
+
+.appointment-button::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  width: 50%;
+  height: 100%;
+  background-color: #ffe6bd;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.appointment-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  width: 50%;
+  height: 100%;
+  background-color: #ffe6bd;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.appointment-button:hover::before {
+  transform: translateX(0);
+}
+
+.appointment-button:hover::after {
+  transform: translateX(0);
+}
