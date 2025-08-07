@@ -132,11 +132,9 @@ function App() {
             </span>
             <a
               href="https://wa.me/905369932365"
-              className="border-2 border-[#b8a269] p-4"
+              className="btn-animate text-[#b8a269] border-2 border-current w-full max-w-[250px] h-[64px] flex items-center justify-center"
             >
-              <span className="text-lg text-[#b8a269] tracking-[3px]">
-                +90 538 970 84 62
-              </span>
+              <span className="text-lg tracking-[3px]">+90 538 970 84 62</span>
             </a>
           </div>
         </div>
