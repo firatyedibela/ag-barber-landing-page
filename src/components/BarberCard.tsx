@@ -39,21 +39,31 @@ export const BarberCard = ({
           </div>
         </div>
         <div className="flex justify-center gap-6">
-          <img
-            className="w-7 h-7 rounded-md"
-            src={instagramIcon}
-            alt="instagram icon"
-          />
-          <img
-            className="w-7 h-7 rounded-md"
-            src={whatsappIcon}
-            alt="whatsapp icon"
-          />
-          <img
-            className="w-7 h-7 rounded-md"
-            src={phoneIcon}
-            alt="phone icon"
-          />
+          <a className="card-icon" href="https://instagram.com" target="_blank">
+            <img
+              className="w-7 h-7 rounded-md"
+              src={instagramIcon}
+              alt="instagram icon"
+            />
+          </a>
+          <a
+            className="card-icon"
+            href="https://wa.me/905369932365"
+            target="_blank"
+          >
+            <img
+              className="w-7 h-7 rounded-md"
+              src={whatsappIcon}
+              alt="whatsapp icon"
+            />
+          </a>
+          <a className="card-icon" href="tel:+905369932365" target="_blank">
+            <img
+              className="w-7 h-7 rounded-md"
+              src={phoneIcon}
+              alt="phone icon"
+            />
+          </a>
         </div>
       </div>
     </div>
