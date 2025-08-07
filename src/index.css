@@ -75,13 +75,13 @@
   }
 }
 
-.appointment-button:hover > span {
+.btn-animate:hover > span {
   color: black;
   transition: all;
   transition-duration: 600ms;
 }
 
-.appointment-button::before {
+.btn-animate::before {
   content: '';
   position: absolute;
   right: 0;
@@ -93,7 +93,7 @@
   transition: transform 0.4s ease;
 }
 
-.appointment-button::after {
+.btn-animate::after {
   content: '';
   position: absolute;
   left: 0;
@@ -105,10 +105,10 @@
   transition: transform 0.4s ease;
 }
 
-.appointment-button:hover::before {
+.btn-animate:hover::before {
   transform: translateX(0);
 }
 
-.appointment-button:hover::after {
+.btn-animate:hover::after {
   transform: translateX(0);
 }
