@@ -7,6 +7,7 @@ import { barbers } from './data/barbers';
 import scissorsIcon from './assets/scissors-icon.svg';
 import { Gallery } from './components/swipers/Gallery';
 import { ReviewsSwiper } from './components/swipers/ReviewsSwiper';
+import wpIcon from './assets/ww.png';
 
 function App() {
   return (
@@ -75,7 +76,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="location-map py-18 bg-[#1a1a1a]">
+        <section className="location-map py-24 bg-[#1a1a1a]">
           <div className="location-wrap max-w-[1160px] m-auto flex flex-col items-center gap-10">
             <div className="location-header">
               <h2 className="text-[42px] lg:text-[72px] font-semibold tracking-[4px] text-center text-white">
@@ -84,12 +85,62 @@ function App() {
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.6627921367817!2d32.93365051201637!3d39.90418148655599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d351af6f0d19fb%3A0x3bc189688adcc6f2!2zQSAmIEcgRXJrZWsgS3VhZsO2csO8!5e0!3m2!1str!2str!4v1754506031417!5m2!1str!2str"
-              className="w-[90%] h-100 sm:w-[550px] sm:h-[550px] md:w-[650px] lg:w-[800px] lg:h-[600px] xl:w-full xl:h-[650px] rounded-xl border-4 border-white/50"
+              className="w-[90%] h-100 sm:w-[550px] sm:h-[550px] md:w-[650px] lg:w-[800px] lg:h-[600px] xl:w-[1100px] xl:h-[650px] rounded-xl border-4 border-white/50"
               loading="lazy"
             ></iframe>
           </div>
         </section>
       </main>
+      <footer className="contact bg-[#111111] py-24 relative font-body">
+        <div className="footer-wrap max-w-[1160px] m-auto flex flex-col items-center gap-16 lg:px-8 lg:flex-row lg:gap-0 lg:justify-between">
+          <div className="flex flex-col gap-6 items-center">
+            <div className="working-hours text-white flex flex-col gap-2 text-center">
+              <h3 className="text-[#b8a269] font-bold text-2xl tracking-[1px]">
+                Çalışma Saatleri
+              </h3>
+              <div className="w-[250px] h-[1px] bg-[#b8a269]/30 m-auto"></div>
+              <span className="text-lg">
+                Pazartesi - Cumartesi:{' '}
+                <span className="font-semibold">09:00 - 22:00</span>
+              </span>
+              <span className="text-lg">
+                Pazar: <span className="font-semibold">Kapalı</span>
+              </span>
+            </div>
+          </div>
+          <div className="address text-white text-center text-lg max-w-[320px]">
+            <div className="flex flex-col gap-2">
+              <span className="text-[#b8a269] font-bold text-2xl tracking-[1px]">
+                Adres
+              </span>
+              <div className="w-[250px] h-[1px] bg-[#b8a269]/30 m-auto"></div>
+              <p className="mb-2 font">
+                Akşemsettin, 980. Sk 173b, 06480 Mamak/Ankara
+              </p>
+            </div>
+          </div>
+          <div className="whatsapp text-white flex flex-col gap-6 items-center text-center">
+            <a
+              href=""
+              className="cursor-pointer hover:scale-115 transition duration-300"
+            >
+              <img className="w-16 h-16" src={wpIcon} alt="whatsapp icon" />
+            </a>
+            <span className="max-w-[290px] text-lg">
+              Soru, görüş ve önerileriniz için WhatsApp hattımızdan bize
+              ulaşabilirsiniz.
+            </span>
+            <a href="" className="border-2 border-[#b8a269] p-4">
+              <span className="text-lg text-[#b8a269] tracking-[3px]">
+                +90 538 970 84 62
+              </span>
+            </a>
+          </div>
+        </div>
+        <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm text-center ">
+          © 2025 A&G Erkek Kuaförü. Tüm hakları saklıdır.
+        </span>
+      </footer>
     </div>
   );
 }
