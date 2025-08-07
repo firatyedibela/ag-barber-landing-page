@@ -121,3 +121,12 @@
 .btn-animate:hover::after {
   transform: translateX(0);
 }
+
+.card-icon > img {
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.card-icon:hover > img {
+  transform: scale(120%);
+}
