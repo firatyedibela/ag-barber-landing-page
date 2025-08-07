@@ -15,7 +15,7 @@ export const barbers: Barber[] = [
     name: 'Serkan Eryurt',
     title: 'Uzman Berber',
     introduction:
-      'Çok genç yaşlarda başlayıp yıllar içinde ustalaştığı berberlik mesleğini, müşteri memnuniyetine verdiği önemle ve tutkuyla sürdürüyor.',
+      'Çok genç yaşlarda başlayıp yıllar içinde ustalaştığı berberlik mesleğini, müşteri memnuniyetine verdiği önem ve tutkuyla sürdürüyor.',
     instagram: 'serkan1234567',
     phone: '(599) 999 99 99',
   },
