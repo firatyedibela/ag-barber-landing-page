@@ -58,7 +58,7 @@ function App() {
         </section>
         <section className="gallery min-h-[100vh] py-24 ">
           <div className="gallery-wrap m-auto">
-            <div className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-16">
+            <div className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-8 lg:mb-16">
               <h2 className="text-[24px] lg:text-[64px] font-semibold">
                 Salonumuzdan Görseller
               </h2>
@@ -92,7 +92,7 @@ function App() {
         </section>
       </main>
       <footer className="contact bg-[#111111] py-24 relative font-body">
-        <div className="footer-wrap max-w-[1160px] m-auto flex flex-col items-center gap-16 lg:px-8 lg:flex-row lg:gap-0 lg:justify-between">
+        <div className="footer-wrap max-w-[1160px] m-auto flex flex-col items-center gap-16 lg:px-8 lg:flex-row lg:gap-0 lg:justify-between mb-6">
           <div className="flex flex-col gap-6 items-center">
             <div className="working-hours text-white flex flex-col gap-2 text-center">
               <h3 className="text-[#b8a269] font-bold text-2xl tracking-[1px]">
@@ -121,7 +121,7 @@ function App() {
           </div>
           <div className="whatsapp text-white flex flex-col gap-6 items-center text-center">
             <a
-              href=""
+              href="https://wa.me/905369932365"
               className="cursor-pointer hover:scale-115 transition duration-300"
             >
               <img className="w-16 h-16" src={wpIcon} alt="whatsapp icon" />
@@ -130,14 +130,17 @@ function App() {
               Soru, görüş ve önerileriniz için WhatsApp hattımızdan bize
               ulaşabilirsiniz.
             </span>
-            <a href="" className="border-2 border-[#b8a269] p-4">
+            <a
+              href="https://wa.me/905369932365"
+              className="border-2 border-[#b8a269] p-4"
+            >
               <span className="text-lg text-[#b8a269] tracking-[3px]">
                 +90 538 970 84 62
               </span>
             </a>
           </div>
         </div>
-        <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm text-center ">
+        <span className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm text-center w-[200px] lg:w-auto">
           © 2025 A&G Erkek Kuaförü. Tüm hakları saklıdır.
         </span>
       </footer>
