@@ -1,7 +1,6 @@
-import { Hero, Services, Barbers } from './components/sections';
+import { Hero, Services, Barbers, Gallery } from './components/sections';
 import { Header } from './components/landmarks';
 
-import { Gallery } from './components/swipers/Gallery';
 import { ReviewsSwiper } from './components/swipers/ReviewsSwiper';
 import wpIcon from './assets/ww.png';
 
@@ -13,26 +12,7 @@ function App() {
         <Hero />
         <Services />
         <Barbers />
-        <section className="gallery min-h-[100vh] py-24 ">
-          <div className="gallery-wrap m-auto">
-            <div className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-8 lg:mb-16">
-              <h2 className="text-[24px] lg:text-[64px] font-semibold">
-                Salonumuzdan Görseller
-              </h2>
-              <p className="text-[17px] lg:text-[24px]">
-                Klimalı salonumuzda serin bir ortamda hizmet alırken, çay ve
-                kahve ikramlarımızla keyfinize keyif katıyoruz.
-              </p>
-              <div className="w-[250px] md:w-[450px] lg:w-[800px] h-[1px] mt-2 bg-black opacity-[0.15] self-center"></div>
-            </div>
-            <div className="image-gallery-wrap mb-6 max-w-[1440px] m-auto md:px-4">
-              <Gallery />
-            </div>
-            <div className="reviews-wrap max-w-[1160px] xl:max-w-[1280px] md:px-8 m-auto">
-              <ReviewsSwiper />
-            </div>
-          </div>
-        </section>
+        <Gallery />
         <section className="location-map py-24 bg-[#1a1a1a]">
           <div className="location-wrap max-w-[1160px] m-auto flex flex-col items-center gap-10">
             <div className="location-header">

@@ -21,7 +21,7 @@ const barbershopImages = [
   barbershop6,
 ];
 
-export const Gallery = () => {
+export const BarbershopSwiper = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const handleLightboxClose = () => {
