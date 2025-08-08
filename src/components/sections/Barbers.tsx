@@ -4,7 +4,10 @@ import scissorsIcon from '../../assets/scissors-icon.svg';
 
 export const Barbers = () => {
   return (
-    <section className="barbers min-h-[100vh] px-[25px] py-24">
+    <section
+      id="section-barbers"
+      className="barbers min-h-[100vh] px-[25px] py-24"
+    >
       <div className="barbers-wrap max-w-[1160px] m-auto flex flex-col gap-10 lg:gap-18">
         <div className="barbers-header flex lg:flex-col justify-center items-center gap-2 sm:gap-6">
           <img

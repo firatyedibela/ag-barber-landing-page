@@ -3,7 +3,10 @@ import { services } from '../../data/services';
 
 export const Services = () => {
   return (
-    <section className="services min-h-[100vh] px-[25px] py-24">
+    <section
+      id="setion-services"
+      className="services min-h-[100vh] px-[25px] py-24"
+    >
       <div className="services-wrap max-w-[1160px] m-auto h-full flex flex-col items-center gap-12">
         <div className="services-header flex flex-col gap-1">
           <h2 className="text-[16px] lg:text-[28px] tracking-[2px] lg:tracking-[4px] font-bold text-golden font-body text-center">

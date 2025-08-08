@@ -3,7 +3,7 @@ import { BarbershopSwiper } from '../swipers/BarbershopSwiper';
 
 export const Gallery = () => {
   return (
-    <section className="gallery min-h-[100vh] py-24 ">
+    <section id="section-gallery" className="gallery min-h-[100vh] py-24 ">
       <div className="gallery-wrap m-auto">
         <div className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-8 lg:mb-16">
           <h2 className="text-[24px] lg:text-[64px] font-semibold">
