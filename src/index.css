@@ -130,3 +130,36 @@
 .card-icon:hover > img {
   transform: scale(120%);
 }
+
+.nav-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.nav-btn:hover {
+  color: #b8a269;
+}
+
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #b8a269;
+  bottom: 0;
+  transform: translateX(-101%);
+  transition: all 0.4s ease;
+}
+
+.nav-btn:hover::before {
+  transform: translateX(0);
+}
+
+.menu-button > span {
+  transition: all 0.2s ease;
+}
+
+.menu-button:hover > span {
+  color: #cc8617;
+}
