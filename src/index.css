@@ -27,8 +27,19 @@
 }
 
 .hero {
-  background-image: url('./assets/barbershop-bg.jpg');
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('./assets/barbershop-bg-mobile.avif');
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    background-image: url('./assets/barbershop-bg.jpg');
+  }
 }
 
 .barbers {
