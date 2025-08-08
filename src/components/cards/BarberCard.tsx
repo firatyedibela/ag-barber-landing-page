@@ -47,7 +47,12 @@ export const BarberCard = ({
           </div>
         </div>
         <div className="flex justify-center gap-6">
-          <a className="card-icon" href={instagram} target="_blank">
+          <a
+            className="card-icon"
+            href={instagram}
+            target="_blank"
+            aria-label="instagram"
+          >
             <img
               className="w-7 h-7 rounded-md"
               src={instagramIcon}
@@ -58,6 +63,7 @@ export const BarberCard = ({
             className="card-icon"
             href={`https://wa.me/${phone}`}
             target="_blank"
+            aria-label="whatsapp"
           >
             <img
               className="w-7 h-7 rounded-md"
@@ -70,6 +76,7 @@ export const BarberCard = ({
               className="w-7 h-7 rounded-md"
               src={phoneIcon}
               alt="phone icon"
+              aria-label="phone call"
             />
           </a>
         </div>

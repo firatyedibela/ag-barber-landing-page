@@ -10,6 +10,7 @@ export const ReviewCard = (props: Review) => {
       href={href}
       target="_blank"
       className="w-[300px] h-[200px] m-auto block flex flex-col gap-3 p-4 shadow-[0_0_5px_1px_#D1D5DB] rounded-lg hover:scale-102 transition duration-150"
+      aria-label="google review"
     >
       <div className="flex justify-between">
         <div className="flex gap-3 items-start">
