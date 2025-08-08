@@ -1,6 +1,13 @@
 export const ScrollDownButton = () => {
+  const handleScrollDown = () => {
+    const el = document.getElementById('section-services');
+    if (el) {
+      el?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <button onClick={() => console.log('scrolling down...')}>
+    <button className="more-info-btn cursor-pointer" onClick={handleScrollDown}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="30px"
