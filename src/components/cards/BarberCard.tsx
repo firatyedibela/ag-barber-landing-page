@@ -30,6 +30,7 @@ export const BarberCard = ({
     >
       <img
         src={avatar}
+        alt="barber avatar image"
         className="img bg-white rounded-20 w-[190px] h-[190px] object-cover object-top rounded-[20px] absolute -top-1/4 left-1/2 -translate-x-1/2 shadow-[0px_4px_10px_0_#7C7C7C]"
       ></img>
       <div className="flex flex-col justify-between px-4 absolute w-full bottom-6 top-30 text-white/85 text-center">
