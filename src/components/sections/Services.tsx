@@ -4,7 +4,7 @@ import { services } from '../../data/services';
 export const Services = () => {
   return (
     <section
-      id="setion-services"
+      id="section-services"
       className="services min-h-[100vh] px-[25px] py-24"
     >
       <div className="services-wrap max-w-[1160px] m-auto h-full flex flex-col items-center gap-12">
