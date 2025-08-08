@@ -1,10 +1,17 @@
 import { ReviewsSwiper } from '../swipers/ReviewsSwiper';
 import { BarbershopSwiper } from '../swipers/BarbershopSwiper';
+import { motion } from 'motion/react';
 
 export const Gallery = () => {
   return (
     <section id="section-gallery" className="gallery min-h-[100vh] py-24 ">
-      <div className="gallery-wrap m-auto">
+      <motion.div
+        initial={{ y: 150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="gallery-wrap m-auto"
+      >
         <div className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-8 lg:mb-16">
           <h2 className="text-[24px] lg:text-[64px] font-semibold">
             Salonumuzdan Görseller
@@ -21,7 +28,7 @@ export const Gallery = () => {
         <div className="reviews-wrap max-w-[1160px] xl:max-w-[1280px] md:px-8 m-auto">
           <ReviewsSwiper />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

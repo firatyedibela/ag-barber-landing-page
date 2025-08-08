@@ -1,5 +1,6 @@
 import { ServiceCard } from '../cards';
 import { services } from '../../data/services';
+import { motion } from 'motion/react';
 
 export const Services = () => {
   return (
@@ -8,7 +9,13 @@ export const Services = () => {
       className="services min-h-[100vh] px-[25px] py-24"
     >
       <div className="services-wrap max-w-[1160px] m-auto h-full flex flex-col items-center gap-12">
-        <div className="services-header flex flex-col gap-1">
+        <motion.div
+          initial={{ y: 150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="services-header flex flex-col gap-1"
+        >
           <h2 className="text-[16px] lg:text-[28px] tracking-[2px] lg:tracking-[4px] font-bold text-golden font-body text-center">
             HİZMETLERİMİZ
           </h2>
@@ -17,7 +24,7 @@ export const Services = () => {
             hizmeti sunmak için özenle çalışıyoruz.
           </p>
           <div className="w-[250px] md:w-[450px] lg:w-[800px] h-[1px] mt-2 bg-black opacity-[0.15] self-center"></div>
-        </div>
+        </motion.div>
 
         <div className="grid gap-12 lg:justify-between lg:grid-cols-2">
           {services.map((service) => (

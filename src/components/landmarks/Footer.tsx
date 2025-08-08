@@ -1,4 +1,5 @@
 import wpIcon from '../../assets/wpGreen.png';
+import { motion } from 'motion/react';
 
 export const Footer = () => {
   return (
@@ -6,7 +7,13 @@ export const Footer = () => {
       id="section-contact"
       className="contact bg-[#111111] py-24 relative font-body"
     >
-      <div className="footer-wrap max-w-[1160px] m-auto flex flex-col items-center gap-16 lg:px-8 lg:flex-row lg:gap-0 lg:justify-between mb-6">
+      <motion.div
+        initial={{ y: 150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="footer-wrap max-w-[1160px] m-auto flex flex-col items-center gap-16 lg:px-8 lg:flex-row lg:gap-0 lg:justify-between mb-6"
+      >
         <div className="flex flex-col gap-6 items-center">
           <div className="working-hours text-white flex flex-col gap-2 text-center">
             <h3 className="text-[#b8a269] font-bold text-2xl tracking-[1px]">
@@ -51,7 +58,7 @@ export const Footer = () => {
             <span className="text-lg tracking-[3px]">+90 538 970 84 62</span>
           </a>
         </div>
-      </div>
+      </motion.div>
       <span className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm text-center w-[200px] lg:w-auto">
         © 2025 A&G Erkek Kuaförü. Tüm hakları saklıdır.
       </span>

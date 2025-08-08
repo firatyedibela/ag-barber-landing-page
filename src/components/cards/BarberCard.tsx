@@ -1,6 +1,7 @@
 import instagramIcon from '../../assets/instagram-icon.svg';
 import phoneIcon from '../../assets/phone-icon.svg';
 import whatsappIcon from '../../assets/whatsapp-icon.svg';
+import { motion } from 'motion/react';
 
 type BarberCardProps = {
   avatar: string;
@@ -20,7 +21,13 @@ export const BarberCard = ({
   phone,
 }: BarberCardProps) => {
   return (
-    <div className="w-[325px] min-h-[390px] relative mt-24 bg-[#181817] rounded-[20px] shadow-[4px_4px_10px_0_#323232]">
+    <motion.div
+      initial={{ y: 150, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="w-[325px] min-h-[390px] relative mt-24 bg-[#181817] rounded-[20px] shadow-[4px_4px_10px_0_#323232]"
+    >
       <img
         src={avatar}
         className="img bg-white rounded-20 w-[190px] h-[190px] object-cover object-top rounded-[20px] absolute -top-1/4 left-1/2 -translate-x-1/2 shadow-[0px_4px_10px_0_#7C7C7C]"
@@ -66,6 +73,6 @@ export const BarberCard = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

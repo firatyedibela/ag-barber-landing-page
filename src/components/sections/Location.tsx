@@ -1,7 +1,15 @@
+import { motion } from 'motion/react';
+
 export const Location = () => {
   return (
     <section id="section-location" className="location-map py-24 bg-[#1a1a1a]">
-      <div className="location-wrap max-w-[1160px] m-auto flex flex-col items-center gap-10">
+      <motion.div
+        initial={{ y: 150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="location-wrap max-w-[1160px] m-auto flex flex-col items-center gap-10"
+      >
         <div className="location-header">
           <h2 className="text-[42px] lg:text-[72px] font-semibold tracking-[4px] text-center text-white">
             Ulaşım
@@ -12,7 +20,7 @@ export const Location = () => {
           className="w-[90%] h-100 sm:w-[550px] sm:h-[550px] md:w-[650px] lg:w-[800px] lg:h-[600px] xl:w-[1100px] xl:h-[650px] rounded-xl border-4 border-white/50"
           loading="lazy"
         ></iframe>
-      </div>
+      </motion.div>
     </section>
   );
 };
