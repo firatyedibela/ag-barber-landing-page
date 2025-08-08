@@ -1,4 +1,5 @@
 import { Header, Main, Footer } from './components/landmarks';
+import { ScrollTopButton } from './components/buttons/ScrollTopButton';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <Header />
       <Main />
       <Footer />
+      <ScrollTopButton />
     </div>
   );
 }
