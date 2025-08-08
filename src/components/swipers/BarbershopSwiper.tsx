@@ -31,7 +31,7 @@ export const BarbershopSwiper = () => {
   return (
     <>
       <Swiper
-        className="relative max-w-[380px] md:max-w-[768px] lg:max-w-full"
+        className="relative max-w-[450px] md:max-w-[768px] lg:max-w-full"
         modules={[Navigation, Autoplay]}
         navigation
         loop
@@ -50,7 +50,7 @@ export const BarbershopSwiper = () => {
         {barbershopImages.map((image) => (
           <SwiperSlide className="barbershop-slide" key={image}>
             <div
-              className="m-auto w-full max-w-[380px] h-[250px] lg:max-w-[480px] lg:h-[310px]  text-[72px] font-bold flex justify-center items-center overflow-hidden hover:opacity-80 transition duration-300 hover:scale-105"
+              className="m-auto w-full w-full h-[250px] lg:max-w-[480px] lg:h-[310px]  text-[72px] font-bold flex justify-center items-center overflow-hidden hover:opacity-80 transition duration-300 hover:scale-105"
               onClick={() => setSelectedImage(image)}
             >
               <img
