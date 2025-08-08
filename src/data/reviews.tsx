@@ -1,9 +1,14 @@
 import type { Review } from '../types';
+import metehan from '../assets/review-avatars/metehan-ar.png';
+import ahmet from '../assets/review-avatars/ahmet-berkay-yevimli.png';
+import ali from '../assets/review-avatars/ali-can.png';
+import emre from '../assets/review-avatars/emre-kumsal.png';
+import yunus from '../assets/review-avatars/yunus-emre-hıdır.png';
 
 export const reviews: Review[] = [
   {
     id: 1,
-    avatar: '../src/assets/review-avatars/metehan-ar.png',
+    avatar: metehan,
     owner: 'Metehan Ar',
     stars: 5,
     timeAgo: 'bir ay önce',
@@ -13,7 +18,7 @@ export const reviews: Review[] = [
   },
   {
     id: 2,
-    avatar: '../src/assets/review-avatars/ahmet-berkay-yevimli.png',
+    avatar: ahmet,
     owner: 'Ahmet Berkay Yevimli',
     stars: 5,
     timeAgo: '3 yıl önce',
@@ -22,7 +27,7 @@ export const reviews: Review[] = [
   },
   {
     id: 3,
-    avatar: '../src/assets/review-avatars/ali-can.png',
+    avatar: ali,
     owner: 'Ali Can',
     stars: 5,
     timeAgo: '3 yıl önce',
@@ -31,7 +36,7 @@ export const reviews: Review[] = [
   },
   {
     id: 4,
-    avatar: '../src/assets/review-avatars/emre-kumsal.png',
+    avatar: emre,
     owner: 'Emre Kumsal',
     stars: 5,
     timeAgo: '2 yıl önce',
@@ -40,7 +45,7 @@ export const reviews: Review[] = [
   },
   {
     id: 5,
-    avatar: '../src/assets/review-avatars/yunus-emre-hıdır.png',
+    avatar: yunus,
     owner: 'Yunus Emre Hıdır',
     stars: 5,
     timeAgo: 'bir yıl önce',

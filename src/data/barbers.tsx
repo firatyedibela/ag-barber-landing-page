@@ -1,8 +1,9 @@
 import type { Barber } from '../types';
+import profileImage from '../assets/pp.png';
 
 export const barbers: Barber[] = [
   {
-    avatar: 'src/assets/pp.png',
+    avatar: profileImage,
     name: 'Abidin Özdemir',
     title: 'Kıdemli Uzman Berber',
     introduction:
@@ -11,7 +12,7 @@ export const barbers: Barber[] = [
     phone: '+905369932365',
   },
   {
-    avatar: 'src/assets/pp.png',
+    avatar: profileImage,
     name: 'Serkan Eryurt',
     title: 'Uzman Berber',
     introduction:
