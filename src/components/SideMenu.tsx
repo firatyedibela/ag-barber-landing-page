@@ -42,7 +42,12 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
         )}
       >
         <span className="text-[#b8a269] hidden sm:inline">MENU</span>
-        <Hamburger toggled={isOpen} color="white" size={25} />
+        <Hamburger
+          aria-label="open menu"
+          toggled={isOpen}
+          color="white"
+          size={25}
+        />
       </button>
       <AnimatePresence>
         {isOpen && (
