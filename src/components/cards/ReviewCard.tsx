@@ -19,7 +19,9 @@ export const ReviewCard = (props: Review) => {
             className="w-13 h-13"
           />
           <div>
-            <h4 className="text-[15px] font-semibold max-w-[150px]">{owner}</h4>
+            <span className="text-[15px] font-semibold max-w-[150px]">
+              {owner}
+            </span>
             <span className="text-black/80 text-[14px]">{timeAgo}</span>
           </div>
         </div>
