@@ -1,6 +1,5 @@
 import { Hero } from './components/Hero';
-import { Service } from './components/Service';
-import { BarberCard } from './components/BarberCard';
+import { BarberCard, ServiceCard } from './components/cards';
 import { services } from './data/services';
 import { barbers } from './data/barbers';
 import scissorsIcon from './assets/scissors-icon.svg';
@@ -29,7 +28,7 @@ function App() {
 
             <div className="grid gap-12 lg:justify-between lg:grid-cols-2">
               {services.map((service) => (
-                <Service key={service.title} {...service} />
+                <ServiceCard key={service.title} {...service} />
               ))}
             </div>
           </div>

@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Autoplay } from 'swiper/modules';
 import { reviews } from '../../data/reviews';
-import { ReviewCard } from '../ReviewCard';
+import { ReviewCard } from '../cards';
 
 export const ReviewsSwiper = () => {
   return (

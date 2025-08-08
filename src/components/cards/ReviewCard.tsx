@@ -1,6 +1,6 @@
-import type { Review } from '../types';
-import { Stars } from './Stars';
-import googleIcon from '../assets/google-icon.svg';
+import type { Review } from '../../types';
+import { Stars } from '../Stars';
+import googleIcon from '../../assets/google-icon.svg';
 
 export const ReviewCard = (props: Review) => {
   const { avatar, owner, stars, timeAgo, review, href } = props;

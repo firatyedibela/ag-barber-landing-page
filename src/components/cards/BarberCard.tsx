@@ -1,6 +1,6 @@
-import instagramIcon from '../assets/instagram-icon.svg';
-import phoneIcon from '../assets/phone-icon.svg';
-import whatsappIcon from '../assets/whatsapp-icon.svg';
+import instagramIcon from '../../assets/instagram-icon.svg';
+import phoneIcon from '../../assets/phone-icon.svg';
+import whatsappIcon from '../../assets/whatsapp-icon.svg';
 
 type BarberCardProps = {
   avatar: string;
