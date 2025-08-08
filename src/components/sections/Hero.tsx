@@ -34,7 +34,7 @@ export const Hero = () => {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 1 }}
-        className="flex flex-col gap-2 items-center absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="flex flex-col gap-2 items-center absolute bottom-20 left-1/2 -translate-x-1/2"
       >
         <span className="text-cream font-medium">Daha Fazla Bilgi</span>
         <ScrollDownButton />
