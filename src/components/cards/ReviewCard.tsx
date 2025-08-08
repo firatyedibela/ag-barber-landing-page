@@ -18,7 +18,7 @@ export const ReviewCard = (props: Review) => {
             alt="profile image of review owner"
             className="w-13 h-13"
           />
-          <div>
+          <div className="flex flex-col">
             <span className="text-[15px] font-semibold max-w-[150px]">
               {owner}
             </span>
