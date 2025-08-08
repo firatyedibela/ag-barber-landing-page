@@ -28,7 +28,7 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
 
     setTimeout(() => {
       setOpen(false);
-    }, 1000);
+    }, 740);
   };
 
   return (
@@ -50,7 +50,7 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
             initial={{ x: 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 300, opacity: 0 }}
-            transition={{ duration: 0.4, ease: 'easeInOut' }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
             className="fixed w-[280px] bottom-0 top-0 bg-[#0C0C0C] right-0 z-10 font-body"
           >
             <ul className="text-white flex flex-col gap-2 pt-32 pl-8">
@@ -61,7 +61,7 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{
                     duration: 0.3,
-                    delay: 0.3 + index * 0.1,
+                    delay: 0.1 + index * 0.1,
                   }}
                 >
                   <button
