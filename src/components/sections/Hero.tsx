@@ -20,8 +20,9 @@ export const Hero = () => {
         </motion.h1>
         <motion.p
           initial={{ y: 150, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.3 }}
+          viewport={{ once: true }}
           className="max-w-[550px] xl:max-w-[770px] text-[24px] lg:text-[30px] xl:text-[36px] font-semibold mb-12"
         >
           A & G olarak, profesyonel saç ve sakal bakımında güvenilir
@@ -31,9 +32,8 @@ export const Hero = () => {
       </motion.div>
       <motion.div
         initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 1 }}
-        viewport={{ once: true }}
         className="flex flex-col gap-2 items-center absolute bottom-10 left-1/2 -translate-x-1/2"
       >
         <span className="text-cream font-medium">Daha Fazla Bilgi</span>
