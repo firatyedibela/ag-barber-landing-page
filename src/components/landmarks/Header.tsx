@@ -13,12 +13,12 @@ export const Header = () => {
       </div>
       <SideMenu
         routes={[
-          'ana sayfa',
-          'hizmetlerimiz',
-          'berberlerimiz',
-          'galeri',
-          'ulaşım',
-          'İletişim',
+          { name: 'ana sayfa', id: 'section-hero' },
+          { name: 'hizmetlerimiz', id: 'section-services' },
+          { name: 'berberlerimiz', id: 'section-barbers' },
+          { name: 'galeri', id: 'section-gallery' },
+          { name: 'ulaşım', id: 'section-location' },
+          { name: 'iletişim', id: 'section-contact' },
         ]}
       />
     </header>

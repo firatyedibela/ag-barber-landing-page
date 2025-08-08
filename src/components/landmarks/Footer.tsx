@@ -2,7 +2,10 @@ import wpIcon from '../../assets/wpGreen.png';
 
 export const Footer = () => {
   return (
-    <footer className="contact bg-[#111111] py-24 relative font-body">
+    <footer
+      id="section-contact"
+      className="contact bg-[#111111] py-24 relative font-body"
+    >
       <div className="footer-wrap max-w-[1160px] m-auto flex flex-col items-center gap-16 lg:px-8 lg:flex-row lg:gap-0 lg:justify-between mb-6">
         <div className="flex flex-col gap-6 items-center">
           <div className="working-hours text-white flex flex-col gap-2 text-center">

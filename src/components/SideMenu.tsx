@@ -3,8 +3,13 @@ import { Squash as Hamburger } from 'hamburger-react';
 import { useClickAway } from '@uidotdev/usehooks';
 import clsx from 'clsx';
 
+type Route = {
+  name: string;
+  id: string;
+};
+
 type SideMenuProps = {
-  routes: string[];
+  routes: Route[];
 };
 
 export const SideMenu = ({ routes }: SideMenuProps) => {
@@ -13,6 +18,15 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
   const ref = useClickAway<HTMLDivElement>(() => {
     setOpen(false);
   });
+
+  const handleRouteClick = (route: string): void => {
+    const el = document.getElementById(route);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setOpen(false);
+  };
 
   return (
     <div ref={ref} className="relative h-full flex items-center">
@@ -31,9 +45,12 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
         <div className="fixed w-[280px] bottom-0 top-0 bg-[#0C0C0C] right-0 z-10 font-body">
           <ul className="text-white flex flex-col gap-2 pt-32 pl-8">
             {routes.map((route) => (
-              <li key={route}>
-                <button className="nav-btn capitalize text-lg font-semibold cursor-pointer py-2">
-                  {route}
+              <li key={route.id}>
+                <button
+                  onClick={() => handleRouteClick(route.id)}
+                  className="nav-btn capitalize text-lg font-semibold cursor-pointer py-2"
+                >
+                  {route.name}
                 </button>
               </li>
             ))}
