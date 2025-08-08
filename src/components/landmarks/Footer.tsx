@@ -43,6 +43,7 @@ export const Footer = () => {
         <div className="whatsapp text-white flex flex-col gap-6 items-center text-center">
           <a
             href="https://wa.me/905369932365"
+            target="_blank"
             className="cursor-pointer hover:scale-115 transition duration-300"
           >
             <img className="w-16 h-16" src={wpIcon} alt="whatsapp icon" />
@@ -53,6 +54,7 @@ export const Footer = () => {
           </span>
           <a
             href="https://wa.me/905369932365"
+            target="_blank"
             className="btn-animate text-[#b8a269] border-2 border-current w-full max-w-[250px] h-[64px] flex items-center justify-center"
           >
             <span className="text-lg tracking-[3px]">+90 538 970 84 62</span>
