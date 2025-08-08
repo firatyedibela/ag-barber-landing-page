@@ -171,3 +171,11 @@
 .more-info-btn:hover g {
   fill: #cc8617;
 }
+
+.scroll-top-btn g {
+  transition: all 0.15s ease;
+}
+
+.scroll-top-btn:hover g {
+  fill: #cc8617;
+}
