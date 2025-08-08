@@ -22,7 +22,6 @@ export const Hero = () => {
           initial={{ y: 150, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.3 }}
-          viewport={{ once: true }}
           className="max-w-[550px] xl:max-w-[770px] text-[24px] lg:text-[30px] xl:text-[36px] font-semibold mb-12"
         >
           A & G olarak, profesyonel saç ve sakal bakımında güvenilir
