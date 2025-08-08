@@ -164,10 +164,10 @@
   color: #cc8617;
 }
 
-.more-info-btn > svg {
-  transition: all 0.2s ease;
+.more-info-btn g {
+  transition: all 0.15s ease;
 }
 
-.more-info-btn:hover > svg {
+.more-info-btn:hover g {
   fill: #cc8617;
 }
