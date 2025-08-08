@@ -6,8 +6,8 @@ export const Location = () => {
       <motion.div
         initial={{ y: 150, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="location-wrap max-w-[1160px] m-auto flex flex-col items-center gap-10"
       >
         <div className="location-header">

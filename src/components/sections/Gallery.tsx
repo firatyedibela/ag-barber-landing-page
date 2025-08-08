@@ -7,10 +7,10 @@ export const Gallery = () => {
     <section id="section-gallery" className="gallery min-h-[100vh] py-24 ">
       <motion.div className="gallery-wrap m-auto">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true, amount: 0.4 }}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          viewport={{ once: true, amount: 0.6 }}
           className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-8 lg:mb-16"
         >
           <h2 className="text-[24px] lg:text-[64px] font-semibold">
