@@ -32,7 +32,7 @@ export const ScrollTopButton = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="scroll-top-btn w-12 h-12 fixed right-[25px] bottom-6 bg-black cursor-pointer rounded-xs"
+          className="scroll-top-btn w-12 h-12 fixed right-[25px] bottom-6 bg-black cursor-pointer rounded-xs z-10"
           onClick={handleScrollTop}
         >
           <ArrowUp />
