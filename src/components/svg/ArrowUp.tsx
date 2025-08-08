@@ -1,6 +1,9 @@
 export const ArrowUp = () => {
   return (
     <svg
+      width="30px"
+      height="30px"
+      className="m-auto"
       viewBox="0 0 32 32"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
