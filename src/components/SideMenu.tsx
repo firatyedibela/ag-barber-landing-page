@@ -35,6 +35,7 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
     <div ref={ref} className="relative h-full flex items-center">
       <button
         onClick={() => setOpen((prev) => !prev)}
+        aria-label={isOpen ? 'close menu' : 'open menu'}
         aria-expanded={isOpen}
         className={clsx(
           'menu-button sm:pl-2 h-[42px] cursor-pointer border flex items-center font-bold text-sm tracking-[2px] bg-black fixed right-[25px] md:right-8 lg:right-10 z-15',
@@ -42,12 +43,7 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
         )}
       >
         <span className="text-[#b8a269] hidden sm:inline">MENU</span>
-        <Hamburger
-          aria-label="open menu"
-          toggled={isOpen}
-          color="white"
-          size={25}
-        />
+        <Hamburger toggled={isOpen} color="white" size={25} />
       </button>
       <AnimatePresence>
         {isOpen && (
