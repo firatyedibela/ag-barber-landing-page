@@ -1,4 +1,3 @@
-import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Service } from './components/Service';
 import { BarberCard } from './components/BarberCard';
@@ -12,10 +11,8 @@ import wpIcon from './assets/ww.png';
 function App() {
   return (
     <div>
-      <div className="h-[100vh]">
-        <Header />
-        <Hero />
-      </div>
+      <Hero />
+
       <main className="font-body">
         <section className="services min-h-[100vh] px-[25px] py-24">
           <div className="services-wrap max-w-[1160px] m-auto h-full flex flex-col items-center gap-12">
