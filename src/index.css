@@ -163,3 +163,11 @@
 .menu-button:hover > span {
   color: #cc8617;
 }
+
+.more-info-btn > svg {
+  transition: all 0.2s ease;
+}
+
+.more-info-btn:hover > svg {
+  fill: #cc8617;
+}
