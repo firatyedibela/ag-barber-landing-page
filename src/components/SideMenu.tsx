@@ -19,13 +19,15 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
     setOpen(false);
   });
 
-  const handleRouteClick = (route: string): void => {
+  const handleRouteClick = (route: string) => {
     const el = document.getElementById(route);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
 
-    setOpen(false);
+    setTimeout(() => {
+      setOpen(false);
+    }, 1000);
   };
 
   return (
