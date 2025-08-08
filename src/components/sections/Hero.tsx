@@ -31,8 +31,8 @@ export const Hero = () => {
         <AppointmentButton />
       </motion.div>
       <motion.div
-        initial={{ bottom: '-30px', opacity: 0 }}
-        whileInView={{ bottom: '40px', opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 1 }}
         viewport={{ once: true }}
         className="flex flex-col gap-2 items-center absolute bottom-10 left-1/2 -translate-x-1/2"
