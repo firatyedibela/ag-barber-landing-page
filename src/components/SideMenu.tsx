@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useClickAway } from '@uidotdev/usehooks';
 import clsx from 'clsx';
+import { AnimatePresence, motion } from 'motion/react';
 
 type Route = {
   name: string;
@@ -43,22 +44,38 @@ export const SideMenu = ({ routes }: SideMenuProps) => {
         <span className="text-[#b8a269] hidden sm:inline">MENU</span>
         <Hamburger toggled={isOpen} color="white" size={25} />
       </button>
-      {isOpen && (
-        <div className="fixed w-[280px] bottom-0 top-0 bg-[#0C0C0C] right-0 z-10 font-body">
-          <ul className="text-white flex flex-col gap-2 pt-32 pl-8">
-            {routes.map((route) => (
-              <li key={route.id}>
-                <button
-                  onClick={() => handleRouteClick(route.id)}
-                  className="nav-btn capitalize text-lg font-semibold cursor-pointer py-2"
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 300, opacity: 0 }}
+            transition={{ duration: 0.4, ease: 'easeInOut' }}
+            className="fixed w-[280px] bottom-0 top-0 bg-[#0C0C0C] right-0 z-10 font-body"
+          >
+            <ul className="text-white flex flex-col gap-2 pt-32 pl-8">
+              {routes.map((route, index) => (
+                <motion.li
+                  key={route.id}
+                  initial={{ x: 100, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.3 + index * 0.1,
+                  }}
                 >
-                  {route.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+                  <button
+                    onClick={() => handleRouteClick(route.id)}
+                    className="nav-btn capitalize text-lg font-semibold cursor-pointer py-2"
+                  >
+                    {route.name}
+                  </button>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
