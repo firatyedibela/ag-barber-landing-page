@@ -1,5 +1,5 @@
-import { SideMenu } from './SideMenu';
-import agLogo from '../assets/A&G.svg';
+import { SideMenu } from '../SideMenu';
+import agLogo from '../../assets/A&G.svg';
 
 export const Header = () => {
   return (
