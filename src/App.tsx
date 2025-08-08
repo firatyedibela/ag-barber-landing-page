@@ -1,4 +1,4 @@
-import { Hero } from './components/Hero';
+import { Hero } from './components/sections';
 import { BarberCard, ServiceCard } from './components/cards';
 import { services } from './data/services';
 import { barbers } from './data/barbers';

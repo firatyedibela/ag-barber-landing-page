@@ -1,6 +1,6 @@
-import { ScrollDownButton } from './buttons/ScrollDownButton';
-import { AppointmentButton } from './buttons/AppointmentButton';
-import { Header } from './Header';
+import { ScrollDownButton } from '../buttons/ScrollDownButton';
+import { AppointmentButton } from '../buttons/AppointmentButton';
+import { Header } from '../Header';
 
 export const Hero = () => {
   return (
