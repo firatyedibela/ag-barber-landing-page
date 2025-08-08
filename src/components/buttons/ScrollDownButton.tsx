@@ -9,7 +9,11 @@ export const ScrollDownButton = () => {
   };
 
   return (
-    <button className="more-info-btn cursor-pointer" onClick={handleScrollDown}>
+    <button
+      aria-label="scroll down"
+      className="more-info-btn cursor-pointer"
+      onClick={handleScrollDown}
+    >
       <ArrowDown />
     </button>
   );

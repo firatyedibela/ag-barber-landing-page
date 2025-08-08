@@ -25,6 +25,7 @@ export const Lightbox = ({ image, onClose }: LightboxProps) => {
     >
       <div className="md:[640px] h-[360px] lg:w-[900px] lg:h-[450px] xl:w-[1100px] xl:h-[619px] relative">
         <button
+          aria-label="close lightbox"
           className="absolute right-1 -top-11 w-8 h-8 cursor-pointer font-bold bg-[#bcbcbcbf] rounded-xs hover:bg-white/80 transition duration-150"
           onClick={onClose}
         >
