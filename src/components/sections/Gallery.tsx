@@ -10,7 +10,7 @@ export const Gallery = () => {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true }}
           className="gallery-header flex flex-col max-w-[1160px] m-auto items-center text-center gap-2 px-4 mb-8 lg:mb-16"
         >
           <h2 className="text-[24px] lg:text-[64px] font-semibold">
