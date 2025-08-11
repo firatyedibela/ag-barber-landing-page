@@ -1,4 +1,4 @@
-import { ArrowDown } from '../ArrowDown';
+import { ArrowDown } from '../svg/ArrowDown';
 
 export const ScrollDownButton = () => {
   const handleScrollDown = () => {

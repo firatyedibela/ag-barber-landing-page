@@ -1,6 +1,7 @@
 import { ScrollDownButton } from '../buttons/ScrollDownButton';
 import { AppointmentButton } from '../buttons/AppointmentButton';
 import { motion } from 'motion/react';
+import { StoreStatus } from '../StoreStatus';
 
 export const Hero = () => {
   return (
@@ -14,10 +15,11 @@ export const Hero = () => {
           whileInView={{ y: 0, opacity: 0.65 }}
           transition={{ duration: 1.2 }}
           viewport={{ once: true }}
-          className="text-[16px] lg:text-[20px] xl:text-[26px] font-medium tracking-[4px] opacity-65 mb-2"
+          className="text-[16px] lg:text-[20px] xl:text-[26px] font-medium tracking-[4px] opacity-65 mb-3"
         >
           ERKEK KUAFÖRÜ
         </motion.h1>
+
         <motion.p
           initial={{ y: 150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -28,7 +30,10 @@ export const Hero = () => {
           A & G olarak, profesyonel saç ve sakal bakımında güvenilir
           hizmetimizle sizleri de salonumuza bekliyoruz.
         </motion.p>
-        <AppointmentButton />
+        <div className="flex flex-col items-center w-full gap-4 md:flex-row md:gap-8">
+          <AppointmentButton />
+          <StoreStatus />
+        </div>
       </motion.div>
       <motion.div
         initial={{ y: 100, opacity: 0 }}
